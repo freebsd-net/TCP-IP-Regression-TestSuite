@@ -38,6 +38,12 @@ Local mode is the default mode, and hence the user need not specify any special 
 ```
 Executing the above command will give the information about the inbound injected and outbound sniffed packets which can be studied and checked whether in accordance with the expected behaviour. The TUN virtual network device will be used as a source and sink for packets in this case.
 
+#### Using the script to automate
+The script [run-tests.sh](https://github.com/shivrai/TCP-IP-Regression-TestSuite/blob/master/run-tests.sh) can be used to automate the tests. The value of the `packetdrill` variable should be replaced with the location of the **packetdrill** binary on your machine.
+The following command should be used for executing all the tests -
+```
+sudo sh run-tests.sh
+```
 
 ### Remote mode testing
 
